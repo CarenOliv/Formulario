@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./formulario.css">
+    <title>Meu Formulário</title>
+</head>
+<body>
+    <div  class="campo">
+        <h1 id="titulo">Formulário</h1>
+        <p id="descricao">Responda o questionário abaixo</p>
+    </div>
+    
+    <form>
+        <fieldset>
+
+            <div  class="campo">
+                <label for="nome"> <strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div  class="campo">
+                <label for="email"> <strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div  class="campo">
+                <label for="celular"><strong>Celular</strong></label>
+                <input type="tel" name="celular" id="celular" required>
+            </div>
+
+            <div  class="campo">
+                <label for="datadenascimento"> <strong>Data de nascimento</strong></label>
+                <input type="date" name="datadenascimento" id="datadenascimento">
+            </div>
+
+            <div  class="campo">
+                <label for="identidade"><strong>Documento com foto</strong></label>
+                <input type="file" name="identidade" id="identidade" required>
+            </div>
+
+            <div  class="campo">
+                <label for="estadocivil"> <strong>Estado Civil</strong></label>
+                <input type="radio" name="e_civil" id="solteiro">Solteiro(a)
+                <input type="radio" name="e_civil" id="casado">Casado(a)
+                <input type="radio" name="e_civil" id="divorciado">Divorciado(a)
+                <input type="radio" name="e_civil" id="viuva">Viúvo(a)
+            </div>
+
+            <div  class="campo">
+                <label for="cidade"> <strong>Cidade</strong></label>
+                <input type="text" name="cidade" id="cidade">
+            </div>
+
+            <div  class="campo">
+                <label for="endereco"> <strong>Endereço</strong></label>
+                <input type="text" name="endereco" id="endereco">
+            </div>
+
+            <div  class="campo">
+                <label for="bairro"> <strong>Bairro</strong></label>
+                <input type="text" name="bairro" id="bairro">
+            </div>
+
+            <div  class="campo">
+                <label for="numero"> <strong>Número</strong></label>
+                <input type="text" name="numero" id="numero">
+            </div>
+        </fieldset>
+
+            <input type="submit" value="Enviar" class="botao">
+
+    </form>
+
+</body>
+</html>
