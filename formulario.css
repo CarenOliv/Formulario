@@ -19,22 +19,29 @@ body{
     justify-content: center;
     color: rgb(0, 58, 60);
     font-family: sans-serif;
+    background-color: rgba(95, 158, 160, 0.401);
 }
 
 fieldset{
+    border-radius: 5%;
     margin-right: 50%;
     text-align: center;
     background-color: cadetblue;
 }
-
-.campo input[type="text"], .campo input[type="email"],.campo input[type="date"], .campo input[type="tel"],.campo select, .campo [type="file"], .campo [type="submit"]{
+input{
+    color:  rgb(18, 48, 49);
+}
+.campo input[type="date"],.campo select, .campo [type="file"]{
+    color: rgb(0, 58, 60);
+}
+.campo input[type="text"], .campo input[type="email"],.campo input[type="date"], .campo input[type="tel"],.campo select, .campo [type="file"], .campo [type="submit"], .campo textarea{
     border: 3px solid rgb(10, 28, 29);
     border-radius: 5%;
     padding: 0.2em;
     box-shadow: 2px 2px 2px #DCDCDC;
 }
 
-.campo label{
+.campo label, textarea{
     color: rgb(0, 58, 60);
     /* Os campos ficam embaixo dos nomes */
     display: block;
@@ -43,14 +50,18 @@ fieldset{
     font-family: sans-serif;
 }
 
+
+
 .botao{
     background-color: rgba(17, 97, 100, 0.862);
     font-size: 1em;
     font-family: sans-serif;
+    /* border: 0; */
     font-weight: bold;
-    padding: 0.2em;
+    padding: 0.5em 2em;
     box-shadow: 5px 5px 5px #DCDCDC;
     text-shadow: 1px 1px 5px #DCDCDC;
+    border-radius: 5%;
 
 }
 
